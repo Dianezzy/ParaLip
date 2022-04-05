@@ -1,0 +1,27 @@
+base_config: configs/lipgen/fs2.yaml
+data_dir: 'data/grid/high_grid_160'
+vid_use_gt_dur: false
+high_vid_dir: 'data/grid/processed_high'
+raw_data_dir: 'data/grid'
+
+# grid
+vid_fps: 25
+audio_sample_rate: 16000 # 22050
+max_tokens: 300  # or 450
+max_eval_tokens: 450
+max_eval_sentences: 6
+
+img_channel: 3
+img_h: 80
+img_w: 160
+hidden_size: 256
+use_pitch_embed: false
+use_energy_embed: false
+use_ref_enc: false
+imgdecoder_2D: true
+vid_loss: 'l1'
+
+# train & inference
+max_updates: 210000
+lr: 0.5
+
