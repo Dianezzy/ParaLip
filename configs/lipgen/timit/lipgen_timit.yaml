@@ -1,0 +1,25 @@
+base_config: configs/lipgen/lip_base.yaml
+data_dir: 'data/timit'
+ph_dur_dir: 'data/timit/volunteers'
+frame_dir: 'data/timit/volunteers'
+vid_use_gt_dur: false
+cut_test_set: 10000
+
+# timit
+vid_fps: 29.97
+audio_sample_rate: 16000 # 22050
+max_tokens: 450  # or 450
+max_eval_tokens: 450
+max_eval_sentences: 4
+
+img_channel: 3
+img_h: 80
+img_w: 160
+hidden_size: 256
+imgdecoder_2D: true
+vid_loss: 'l1'
+
+# train & inference
+max_updates: 110000
+lr: 0.5
+

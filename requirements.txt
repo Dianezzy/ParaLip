@@ -1,0 +1,11 @@
+torch>=1.2.0
+matplotlib
+tqdm
+numpy
+pytorch_lightning==0.6.0
+resemblyzer
+tensorboard==1.15.0
+dlib
+pyyaml
+scikit-image==0.16.2
+moviepy

@@ -1,0 +1,62 @@
+base_config: configs/config_base.yaml
+
+#############
+# dataset
+#############
+data_dir: ''
+raw_data_dir: ''
+endless_ds: true
+max_frames: 1550
+max_input_tokens: 1550
+vid_fps: 25
+
+
+vid_use_gt_dur: false
+cut_test_set: 10000
+audio_num_mel_bins: 80
+use_spk_id: false
+num_spk: 1
+
+# model
+hidden_size: 256
+arch: '8 8 8 8 8 8 8 8' # no conv1d
+dropout: 0.2
+predictor_sg: true
+enc_layers: 4
+dec_layers: 4
+
+enc_ffn_kernel_size: 9
+dec_ffn_kernel_size: 9
+ffn_padding: 'SAME'
+
+ref_norm_layer: none
+ref_hidden_stride_kernel:
+  - 256,3,9
+  - 256,3,9
+  - 256,2,9
+  - 256,2,9
+  - 256,2,9
+
+# duration
+predictor_hidden: 256
+dur_predictor_kernel: 3
+use_gt_dur: false
+sep_dur_loss: true
+
+# train and eval
+warmup_updates: 2000
+max_tokens: 28000
+max_sentences: -1
+max_eval_sentences: 1
+max_updates: 200000
+gen_dir_name: ''
+profile_infer: false
+optimizer_adam_beta1: 0.9
+optimizer_adam_beta2: 0.98
+weight_decay: 0
+clip_grad_norm: 1
+
+test_set_name: test
+train_set_name: train
+valid_set_name: valid
+
