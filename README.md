@@ -7,7 +7,11 @@
 This repository is the official PyTorch implementation of our AAAI-2022 [paper](https://arxiv.org/abs/2107.06831), in which we propose ParaLip (for text-based talking face synthesis) .
 
 ## Video Demos
-<img src=https://user-images.githubusercontent.com/48660888/166135987-d27e4ec7-d740-46ce-a12b-bbaaa151a613.gif width="300"/>
+
+
+https://user-images.githubusercontent.com/48660888/166140342-2b0b4a83-3ba5-4235-ade0-c50f6e2483c1.mp4
+
+
 
 Video samples can be found in our [demo page](https://paralip.github.io/).
  
